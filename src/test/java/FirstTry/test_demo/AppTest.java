@@ -19,5 +19,8 @@ public class AppTest
     	int b = 2;
     	
     	assertTrue( a+b == 3 );
+        
+        System.out.println("hello world");
+        
     }
 }
