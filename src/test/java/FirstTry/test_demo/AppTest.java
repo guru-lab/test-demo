@@ -3,15 +3,28 @@ package FirstTry.test_demo;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import junit.framework.TestCase;  
+import junit.framework.TestSuite;  
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest extend TestCase
 {
-    /**
-     * Rigorous Test :-)
-     */
+    public AppTest( String testName )  
+    {  
+        super( testName );  
+    }  
+    /** 
+     * @return the suite of tests being tested 
+     */  
+    public static Test suite()  
+    {  
+        return new TestSuite( AppTest.class );  
+    }  
+    /** 
+     * Rigourous Test :-) 
+     */  
     @Test
     public void simpleTest()
     {
@@ -19,8 +32,9 @@ public class AppTest
     	int b = 2;
     	
     	assertTrue( a+b == 3 );
+        assertTrue( true );
         
-        System.out.println("hello world");
+  
         
     }
 }
