@@ -33,8 +33,5 @@ public class AppTest extend TestCase
     	
     	assertTrue( a+b == 3 );
         assertTrue( true );
-        
-  
-        
-    }
+         }
 }
